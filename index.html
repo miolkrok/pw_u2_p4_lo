@@ -10,7 +10,20 @@
     <header></header>
     <nav></nav>
     <section>
-        <div id="app"></div>
+        <h1>Inicio</h1>
+        <p>{{1+1}}</p>
+        <div id="app">
+            <p>{{1+1}}</p>
+            <p>{{true}}</p>
+            <p>{{true?'Activo':'Inactivo'}}</p>
+            <h4>Nombre:</h4>
+            <h4>{{nombre}}</h4>
+            <p>Apellido:</p>
+            <p>{{apellido}}</p>
+            <button v-on:click = "cambiarNombre">Cambiar Nombre</button>
+            <button v-on:click = "cambiarApellido">Cambiar Apèllido</button>
+        </div>
+        <h1>Fin</h1>
     </section>
     <footer></footer>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
