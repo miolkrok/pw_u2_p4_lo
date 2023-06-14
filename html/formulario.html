@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de ingreso</title>
+    <link rel="stylesheet" href="../css/formulario.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>Formulario de ingreso</h1>
+        <form @submit.prevent="agregarEntidad">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" v-model="entidad.nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" v-model="entidad.apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" v-model="entidad.edad" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" v-model="entidad.email" required>
+            </div>
+            <button type="submit">Ingresar</button>
+        </form>
+        <h2>Entidades ingresadas:</h2>
+        <ul>
+            <li v-for="(item, index) in entidades" :key="index">
+                <span>{{ index + 1 }}. Nombre: {{ item.nombre }}, Apellido: {{ item.apellido }}, Edad: {{ item.edad }}, Email: {{ item.email }}</span>
+            </li>
+        </ul>
+    </div>
+
+    <script src="../js/formulario.js"></script>
+</body>
+
+</html>
