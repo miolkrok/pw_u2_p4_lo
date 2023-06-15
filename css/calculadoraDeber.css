@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+p {
+    align-items: center;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4,75px);
+    background-color: blue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px 5px grey;
+}
+
+.botonCero {
+    grid-column: span 2;
+    /*grid-row: span 2;*/
+}
+
+.display {
+    grid-column: span 4;
+}
+
+.calculadora button{
+    margin-top: 5px;
+    height: 35px;
+    border-radius: 85px;
+    background-color: blueviolet;
+    color: white;
+    font-family: cursive;
+    font-size: 25px;
+}
+
+.c {
+    grid-column: span 4;
+}

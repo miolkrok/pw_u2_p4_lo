@@ -33,7 +33,7 @@ const app = Vue.createApp({
                 console.log('Presiono enter')
                 const nuevoEstudiante = {
                     nombre: this.nombre,
-                    apellido: this.apellido
+                    //apellido: this.apellido
                 }
                 //this.miarreglo.unshift(nuevoEstudiante)
                 this.miarreglo.push(nuevoEstudiante)
@@ -45,7 +45,7 @@ const app = Vue.createApp({
             console.log('Vamos agregar')
             const nuevoEstudiante = {
                 nombre: this.nombre,
-                apellido: this.apellido
+                //apellido: this.apellido
             }
             this.miarreglo.unshift(nuevoEstudiante)
         }
