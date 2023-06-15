@@ -1,3 +1,9 @@
+
+
+h3{
+    display: flex;
+    justify-content: center;
+}
 .container {
     display: flex;
     justify-content: center;
@@ -5,26 +11,23 @@
     
 }
 
-p {
-    align-items: center;
-}
 
 .calculadora {
     display: grid;
-    grid-template-columns: repeat(4,75px);
+    grid-template-columns: repeat(3,75px);
     background-color: blue;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 5px 5px 8px 5px grey;
 }
 
-.botonCero {
+.igual {
     grid-column: span 2;
     /*grid-row: span 2;*/
 }
 
 .display {
-    grid-column: span 4;
+    grid-column: span 3;
 }
 
 .calculadora button{
@@ -38,5 +41,5 @@ p {
 }
 
 .c {
-    grid-column: span 4;
+    grid-column: span 2;
 }
